@@ -42,7 +42,7 @@ export function KeywordDensity({ bioContent }: KeywordDensityProps) {
       .slice(0, 5)
 
     // Calculate percentages
-    const totalKeywords = sortedWords.reduce((sum, [_, count]) => sum + count, 0)
+    const totalKeywords = sortedWords.reduce((sum, [, count]) => sum + count, 0)
 
     return sortedWords.map(([word, count]) => ({
       word,
